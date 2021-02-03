@@ -4,9 +4,9 @@ public class Menu {
 	
 	public long id;
 	public String name;
-	public String[] platos;
-	public String[] bebidas;
-	public String[] snacks;
+	public String[] primeros;
+	public String[] segundos;
+	public String[] terceros;
 	
 	public long getId() {
 		return id;
@@ -20,22 +20,22 @@ public class Menu {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String[] getPlatos() {
-		return platos;
+	public String[] getPrimeros() {
+		return primeros;
 	}
-	public void setPlatos(String[] platos) {
-		this.platos = platos;
+	public void setPrimeros(String[] primeros) {
+		this.primeros = primeros;
 	}
-	public String[] getBebidas() {
-		return bebidas;
+	public String[] getSegundos() {
+		return segundos;
 	}
-	public void setBebidas(String[] bebidas) {
-		this.bebidas = bebidas;
+	public void setSegundos(String[] segundos) {
+		this.segundos = segundos;
 	}
-	public String[] getSnacks() {
-		return snacks;
+	public String[] getTerceros() {
+		return terceros;
 	}
-	public void setSnacks(String[] snacks) {
-		this.snacks = snacks;
+	public void setTerceros(String[] terceros) {
+		this.terceros = terceros;
 	}
 }

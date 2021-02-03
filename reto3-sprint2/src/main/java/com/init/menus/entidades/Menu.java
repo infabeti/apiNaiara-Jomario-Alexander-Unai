@@ -5,6 +5,8 @@ public class Menu {
 	public long id;
 	public String name;
 	public String[] platos;
+	public String[] bebidas;
+	public String[] snacks;
 	
 	public long getId() {
 		return id;
@@ -23,5 +25,17 @@ public class Menu {
 	}
 	public void setPlatos(String[] platos) {
 		this.platos = platos;
+	}
+	public String[] getBebidas() {
+		return bebidas;
+	}
+	public void setBebidas(String[] bebidas) {
+		this.bebidas = bebidas;
+	}
+	public String[] getSnacks() {
+		return snacks;
+	}
+	public void setSnacks(String[] snacks) {
+		this.snacks = snacks;
 	}
 }

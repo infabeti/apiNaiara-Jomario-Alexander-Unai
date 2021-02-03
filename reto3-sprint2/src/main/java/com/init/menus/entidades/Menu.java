@@ -2,9 +2,9 @@ package com.init.menus.entidades;
 
 public class Menu {
 	
-	private long id;
-	private String name;
-	private String[] platos;
+	public long id;
+	public String name;
+	public String[] platos;
 	
 	public long getId() {
 		return id;

@@ -1,15 +1,18 @@
 package com.init.menus.rest;
 
 import com.init.menus.entidades.Menu;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/menu")
+@CrossOrigin (origins = "http://localhost:3000")
 public class MenuREST {
 		
 	String[] platos2 = {"platos1","platos2", "platos3"};
@@ -20,7 +23,7 @@ public class MenuREST {
 		menu.setId(1L);
 		menu.setName("bar 1");
 		menu.setPlatos(platos2);
-
+		
 		return ResponseEntity.ok(menu);
 	}
 	

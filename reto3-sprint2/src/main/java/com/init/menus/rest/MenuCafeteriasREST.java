@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin (origins = "http://localhost:3000")
 public class MenuCafeteriasREST {
 //Cafeteria 1
-	String[] primeros1 = {"Expresso","Ristretto", "Cortado"};
-	String[] segundos1 = {"Té verde","Té negro", "Té blanco"};
-	String[] terceros1 = {"Cheesecake","Tiramisú", "Tres leches"};
+	String[] primeros1 = {"Expresso - 2€","Ristretto - 3€ ", "Cortado 1,5€"};
+	String[] segundos1 = {"Té verde - 2€","Té negro - 2,5€", "Té blanco - 2€"};
+	String[] terceros1 = {"Cheesecake - 1,5€","Tiramisú - 2€", "Tres leches - 2€"};
 	@RequestMapping("/cafeteria1")
 	@GetMapping
 	public ResponseEntity<Menu> getMenu(){
@@ -33,9 +33,9 @@ public class MenuCafeteriasREST {
 		return ResponseEntity.ok(menu);
 	}
 //Cafeteria 2
-	String[] primeros2 = {"Americano","Largo", "Carajillo"};
-	String[] segundos2 = {"Té rojo","Té azul", "Té de manzanilla"};
-	String[] terceros2 = {"Tarta de santiago","Ópera", "Tarta de oreo"};
+	String[] primeros2 = {"Americano 1,5€","Largo - 2€", "Carajillo - 3€"};
+	String[] segundos2 = {"Té rojo - 3€","Té azul - 4€", "Té de manzanilla - 3€"};
+	String[] terceros2 = {"Tarta de santiago - 4€","Ópera - 2€", "Tarta de oreo - 4€"};
 	@RequestMapping("/cafeteria2")
 	@GetMapping
 	public ResponseEntity<Menu> getMenu2(){
@@ -50,9 +50,9 @@ public class MenuCafeteriasREST {
 		return ResponseEntity.ok(menu);
 	}
 //Cafeteria 3
-	String[] primeros3 = {"Café con leche","Café bombón", "Capuchino"};
-	String[] segundos3 = {"Té de menta","Té de tila", "Té de valeriana"};
-	String[] terceros3 = {"Tarta de chocolate negro","Tarta de chocolate blanco", "Tarta de tres chocolates"};
+	String[] primeros3 = {"Café con leche - 1,5€","Café bombón - 2€", "Capuchino - 2€"};
+	String[] segundos3 = {"Té de menta - 2€","Té de tila - 3€", "Té de valeriana - 3€"};
+	String[] terceros3 = {"Tarta de chocolate negro- 4€","Tarta de chocolate blanco - 3€", "Tarta de tres chocolates - 4€"};
 	@RequestMapping("/cafeteria3")
 	@GetMapping
 	public ResponseEntity<Menu> getMenu3(){
@@ -67,9 +67,9 @@ public class MenuCafeteriasREST {
 		return ResponseEntity.ok(menu);
 	}
 //Cafeteria 4
-	String[] primeros4 = {"Mocca","Café irlandés", "Frappé"};
-	String[] segundos4 = {"Té de anís","Té de romero", "Té de boldo"};
-	String[] terceros4 = {"Tarta de oreo","Tarta de mikado", "Tarta de lacasitos"};
+	String[] primeros4 = {"Mocca - 2€ ","Café irlandés - 2,5€", "Frappé - 2€"};
+	String[] segundos4 = {"Té de anís - 2,5€","Té de romero - 2€", "Té de boldo - 3€"};
+	String[] terceros4 = {"Tarta de oreo - 2€","Tarta de mikado - 3,5€ ", "Tarta de lacasitos - 4€ "};
 	@RequestMapping("/cafeteria4")
 	@GetMapping
 	public ResponseEntity<Menu> getMenu4(){
@@ -84,9 +84,9 @@ public class MenuCafeteriasREST {
 		return ResponseEntity.ok(menu);
 	}
 //Cafeteria 5
-	String[] primeros5 = {"Azteca","Cortado", "Largo"};
-	String[] segundos5 = {"Té de lavanda","Té de limón", "Té de jamaica"};
-	String[] terceros5 = {"Cheesecake","Tarta de café", "Tarta de fresa"};
+	String[] primeros5 = {"Azteca - 1€","Cortado - 1€", "Largo - 1,5€"};
+	String[] segundos5 = {"Té de lavanda - 1,5€","Té de limón - 2€", "Té de jamaica - 2€"};
+	String[] terceros5 = {"Cheesecake - 2,5€","Tarta de café - 3,5€", "Tarta de fresa - 3€"};
 	@RequestMapping("/cafeteria5")
 	@GetMapping
 	public ResponseEntity<Menu> getMenu5(){
@@ -101,9 +101,9 @@ public class MenuCafeteriasREST {
 		return ResponseEntity.ok(menu);
 	}
 //Cafeteria 6
-	String[] primeros6 = {"Capuchino","Con leche", "Americano"};
-	String[] segundos6 = {"Té rojo","Manzanilla", "Té negro"};
-	String[] terceros6 = {"Tarta de queso","Tarta de frambuesa", "Tarta de oreo"};
+	String[] primeros6 = {"Capuchino - 2€","Con leche - 1,5€", "Americano - 1,5€"};
+	String[] segundos6 = {"Té rojo - 2€","Manzanilla - 3€", "Té negro - 2€"};
+	String[] terceros6 = {"Tarta de queso - 4€","Tarta de frambuesa - 3€", "Tarta de oreo - 2€"};
 	@RequestMapping("/cafeteria6")
 	@GetMapping
 	public ResponseEntity<Menu> getMenu6(){
@@ -117,9 +117,5 @@ public class MenuCafeteriasREST {
 		
 		return ResponseEntity.ok(menu);
 	}
-	//@GetMapping // estaría escuchando la dirección 'localhost:8080/'
-	//@RequestMapping(value="Hola", method=RequestMethod.GET) // estaría escuchando en 'localhost:8080/hola' y en el metodo GET
-	public String hello() {
-		return "Hola mundo";
-	}
+	
 }

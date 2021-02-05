@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin (origins = "http://localhost:3000")
 public class MenuBaresREST {
 //Bar 1
-	String[] primeros1 = {"Patatas bravas","Patatas fritas", "Ensaladilla rusa"};
-	String[] segundos1 = {"Agua","Cocacola", "Sprite"};
-	String[] terceros1 = {"Patatas","Doritos", "Gusanitos"};
+	String[] primeros1 = {"Patatas bravas - 10€","Patatas fritas - 8€", "Ensaladilla rusa - 12€"};
+	String[] segundos1 = {"Agua - 1,50€","Cocacola - 2€", "Sprite 2€"};
+	String[] terceros1 = {"Patatas - 3€","Doritos - 1,8€", "Gusanitos - 1,5€"};
 	@RequestMapping("/bar1")
 	@GetMapping
 	public ResponseEntity<Menu> getMenu(){
@@ -33,9 +33,9 @@ public class MenuBaresREST {
 		return ResponseEntity.ok(menu);
 	}
 //Bar 2
-	String[] primeros2 = {"Rabas fritas","Sepia a la plancha", "Champiñones al ajillo"};
-	String[] segundos2 = {"Fanta de naranja","Fanta de limón", "Cocacola"};
-	String[] terceros2 = {"Kit-kat","Doritos", "Oreos"};
+	String[] primeros2 = {"Rabas fritas - 9€","Sepia a la plancha - 14€", "Champiñones al ajillo - 7€"};
+	String[] segundos2 = {"Fanta de naranja - 2€","Fanta de limón - 2€", "Cocacola - 2€"};
+	String[] terceros2 = {"Kit-kat - 1,5€","Doritos - 1,5€", "Oreos - 1€"};
 	@RequestMapping("/bar2")
 	@GetMapping
 	public ResponseEntity<Menu> getMenu2(){
@@ -50,9 +50,9 @@ public class MenuBaresREST {
 		return ResponseEntity.ok(menu);
 	}
 //Bar 3
-	String[] primeros3 = {"Patatas mansas", "Rodajitas de longaniza", "Callos de ternera"};
-	String[] segundos3 = {"7up","Sprite", "Zumo de naranja"};
-	String[] terceros3 = {"Huesitos", "Kit-kat", "Gusanitos"};
+	String[] primeros3 = {"Patatas mansas - 10€", "Rodajitas de longaniza - 12€", "Callos de ternera - 14€"};
+	String[] segundos3 = {"7up - 1,5€","Sprite - 2€", "Zumo de naranja - 2€"};
+	String[] terceros3 = {"Huesitos - 1€", "Kit-kat - 1€", "Gusanitos - 1€"};
 	@RequestMapping("/bar3")
 	@GetMapping
 	public ResponseEntity<Menu> getMenu3(){
@@ -67,9 +67,9 @@ public class MenuBaresREST {
 		return ResponseEntity.ok(menu);
 	}
 //Bar 4
-	String[] primeros4 = {"Pan con tomate", "Gambas fritas", "Queso manchego"};
-	String[] segundos4 = {"Batido de chocolate","Mosto", "Red bull"};
-	String[] terceros4 = {"Fantasmitas", "Cheetos", "Chocolate"};
+	String[] primeros4 = {"Pan con tomate - 4€", "Gambas fritas - 6€", "Queso manchego - 5€"};
+	String[] segundos4 = {"Batido de chocolate - 3€","Mosto - 1€", "Red bull - 2€"};
+	String[] terceros4 = {"Fantasmitas - 1€ ", "Cheetos - 1€", "Chocolate - 1€"};
 	@RequestMapping("/bar4")
 	@GetMapping
 	public ResponseEntity<Menu> getMenu4(){
@@ -84,9 +84,9 @@ public class MenuBaresREST {
 		return ResponseEntity.ok(menu);
 	}
 //Bar 5
-	String[] primeros5 = {"Tapa de quesos", "Entremeses variados", "Boquerones en vinagre"};
-	String[] segundos5 = {"Cocacola","Kas", "Fanta"};
-	String[] terceros5 = {"Patatas", "Doritos", "Papadeltas"};
+	String[] primeros5 = {"Tapa de quesos - 9€", "Entremeses variados - 10€", "Boquerones en vinagre - 8€"};
+	String[] segundos5 = {"Cocacola - 2€","Kas - 1,5€", "Fanta - 2€"};
+	String[] terceros5 = {"Patatas - 3€", "Doritos - 2€", "Papadeltas - 1,5€"};
 	@RequestMapping("/bar5")
 	@GetMapping
 	public ResponseEntity<Menu> getMenu5(){
@@ -101,9 +101,9 @@ public class MenuBaresREST {
 		return ResponseEntity.ok(menu);
 	}
 //Bar 6
-	String[] primeros6 = {"Ensaladilla rusa", "Calamares a la Andaluza", "Rabas fritas"};
-	String[] segundos6 = {"Zumos","Agua", "Refrescos"};
-	String[] terceros6 = {"Gusanitos", "Takis", "Kit-kat"};
+	String[] primeros6 = {"Ensaladilla rusa - 10€", "Calamares a la Andaluza - 12€", "Rabas fritas - 10€"};
+	String[] segundos6 = {"Zumos - 2€ ","Agua - 1,5", "Refrescos - 1,5€"};
+	String[] terceros6 = {"Gusanitos - 1,5€", "Takis - 1€", "Kit-kat - 1€"};
 	@RequestMapping("/bar6")
 	@GetMapping
 	public ResponseEntity<Menu> getMenu6(){
@@ -117,9 +117,5 @@ public class MenuBaresREST {
 		
 		return ResponseEntity.ok(menu);
 	}
-	//@GetMapping // estaría escuchando la dirección 'localhost:8080/'
-	//@RequestMapping(value="Hola", method=RequestMethod.GET) // estaría escuchando en 'localhost:8080/hola' y en el metodo GET
-	public String hello() {
-		return "Hola mundo";
-	}
+	
 }
